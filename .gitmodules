@@ -1,0 +1,12 @@
+[submodule "src/cuentas"]
+	path = src/cuentas
+	url = https://github.com/FefeJoker/cuentas.git
+[submodule "src/pedidos"]
+	path = src/pedidos
+	url = https://github.com/FefeJoker/pedidos.git
+[submodule "src/productos"]
+	path = src/productos
+	url = https://github.com/FefeJoker/productos.git
+[submodule "src/usuarios"]
+	path = src/usuarios
+	url = https://github.com/FefeJoker/usuarios.git
