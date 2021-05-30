@@ -1,0 +1,25 @@
+  
+version: '3'
+
+services:
+
+    rabbitmq:
+        container_name: 'rabbitmq'
+        image: rabbitmq:3-management
+        restart: always
+        ports:
+            - "5672"
+            - "15672:15672"
+        env_file:
+            - ./config/rabbitmq.env
+
+    postgres:
+        container_name: 'postgres'
+        image: postgres
+        restart: always
+        volumes:
+            - ./db-data:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        env_file:
+            - ./config/postgres.env
